@@ -1,0 +1,429 @@
+#fabricacion{
+    height: 1217px;
+    background: #172E52;
+    padding: 116px 0 125px 0;
+    .holder{
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto;
+        .container-fluid{
+            h3{
+                width: 934px;
+                height: 96px;
+                margin: 0 auto 74px auto;
+                color: #FFFFFF;
+                font-family: "OpenSans-Regular";
+                font-size: 35px;
+                text-align: center;
+                span{
+                    font-family: "OpenSans-Bold";
+                }
+            }
+            .imagenes{
+                .part-1{
+                    display: flex;
+                    justify-content: center;
+                    .papel{
+                        margin: 0px 18px 17.5px 0px;
+                        .imagen{
+                            width: 727px;
+                            height: 268px;
+                            position: relative;
+                            overflow: hidden;
+                            margin: 0 auto;
+                            img{
+                                width: 100% !important;
+                                transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+                            }
+                            .content{
+                                width: 401px;
+                                height: 66px;
+                                background: #FFFFFF;
+                                position: absolute;
+                                bottom: 0;
+                                padding: 6px 11px 8px 39px;
+                                display: block;
+                                opacity: 0;
+                                filter: blur(50px);
+                                transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+                                h4{
+                                    font-family: "Montserrat-Bold";
+                                    font-size: 20px;
+                                    color: #172E52;
+                                    margin-bottom: 6px;
+                                }
+                                p{
+                                    font-family: "Montserrat-Regular";
+                                    font-size: 12px;
+                                    color: #172E52;
+                                }
+                            }
+                            &:hover img {
+                                transform: scale(1.1);
+                            }
+                            &:hover .content{
+                                opacity: 1;
+                                filter: blur(0);
+                            }
+                        }
+                    }
+                    .plastico{
+                        margin: 0px 0px 17.5px 18px;
+                        .imagen{
+                            width: 459px !important;
+                            height: 268px !important;
+                            position: relative;
+                            overflow: hidden;
+                            margin: 0 auto;
+                            img{
+                                position: relative !important;
+                                transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+                            }
+                            .content{
+                                width: 401px;
+                                height: 66px;
+                                background: #FFFFFF;
+                                position: absolute;
+                                bottom: 0;
+                                padding: 6px 11px 8px 39px;
+                                display: block;
+                                opacity: 0;
+                                filter: blur(50px);
+                                transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+                                h4{
+                                    font-family: "Montserrat-Bold";
+                                    font-size: 20px;
+                                    color: #172E52;
+                                    margin-bottom: 6px;
+                                }
+                                p{
+                                    font-family: "Montserrat-Regular";
+                                    font-size: 12px;
+                                    color: #172E52;
+                                }
+                            }
+                            &:hover img {
+                                transform: scale(1.1);
+                            }
+                            &:hover .content{
+                                opacity: 1;
+                                filter: blur(0);
+                            }
+                        }
+                    }
+                }
+                .part-2{
+                    display: flex;
+                    justify-content: center;
+                    .tela{
+                        margin: 17.5px 18px 0px 0px;
+                        .imagen{
+                            width: 459px !important;
+                            height: 268px !important;
+                            position: relative;
+                            overflow: hidden;
+                            margin: 0 auto;
+                            img{
+                                position: relative !important;
+                                transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+                            }
+                            .content{
+                                width: 401px;
+                                height: 66px;
+                                background: #FFFFFF;
+                                position: absolute;
+                                bottom: 0;
+                                padding: 6px 11px 8px 39px;
+                                display: block;
+                                opacity: 0;
+                                filter: blur(50px);
+                                transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+                                h4{
+                                    font-family: "Montserrat-Bold";
+                                    font-size: 20px;
+                                    color: #172E52;
+                                    margin-bottom: 6px;
+                                }
+                                p{
+                                    font-family: "Montserrat-Regular";
+                                    font-size: 12px;
+                                    color: #172E52;
+                                }
+                            }
+                            &:hover img {
+                                transform: scale(1.1);
+                            }
+                            &:hover .content{
+                                opacity: 1;
+                                filter: blur(0);
+                            }
+                        }
+                    }
+                    .carton{
+                        margin: 17.5px 0px 0px 18px;
+                        .imagen{
+                            width: 727px !important;
+                            height: 268px !important;
+                            position: relative;
+                            overflow: hidden;
+                            margin: 0 auto;
+                            img{
+                                position: relative !important;
+                                transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+                            }
+                            .content{
+                                width: 401px;
+                                height: 66px;
+                                background: #FFFFFF;
+                                position: absolute;
+                                bottom: 0;
+                                padding: 6px 11px 8px 39px;
+                                display: block;
+                                opacity: 0;
+                                filter: blur(50px);
+                                transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+                                h4{
+                                    font-family: "Montserrat-Bold";
+                                    font-size: 20px;
+                                    color: #172E52;
+                                    margin-bottom: 6px;
+                                }
+                                p{
+                                    font-family: "Montserrat-Regular";
+                                    font-size: 12px;
+                                    color: #172E52;
+                                }
+                            }
+                            &:hover img {
+                                transform: scale(1.1);
+                            }
+                            &:hover .content{
+                                opacity: 1;
+                                filter: blur(0);
+                            }
+                        }
+                    }
+                }
+            }
+            .content{
+                display: flex;
+                margin-top: 120px;
+                .text{
+                    width: 33.33%;
+                    h4{
+                        width: 345px;
+                        height: 102px;
+                        font-family: "OpenSans-Bold";
+                        font-size: 25px;
+                        color: #FFFFFF;
+                    }
+                }
+                .tamaño{
+                    width: 33.33%;
+                    display: flex;
+                    .icon{
+                        margin-right: 25px;
+                    }
+                    .text{
+                        h4{
+                            width: 206px;
+                            height: 27px;
+                            font-family: "OpenSans-Bold";
+                            font-size: 20px;
+                            color: #FFFFFF;
+                            margin-bottom: 21px;
+                        }
+                        span{
+                            width: 142px;
+                            height: 22px;
+                            display: inline-block;
+                            font-family: "OpenSans-Regular";
+                            font-size: 16px;
+                            color: #FFFFFF;
+                            padding-left: 12px;
+                            position: relative;
+                            &::before{
+                                content: "";
+                                width: 2px;
+                                height: 32.82px;
+                                position: absolute;
+                                margin-left: -18px;
+                                top: 4px; // If you want to set a smaller height and center it, change this value
+                                background-color: #00C4FF;
+                            }
+                        }
+                    }
+                }
+                .espesor{
+                    width: 33.33%;
+                    display: flex;
+                    .icon{
+                        margin-right: 25px;
+                    }
+                    .text{
+                        h4{
+                            width: 86px;
+                            height: 27px;
+                            font-family: "OpenSans-Bold";
+                            font-size: 20px;
+                            color: #FFFFFF;
+                            margin-bottom: 21px;
+                        }
+                        span{
+                            width: 255px;
+                            height: 66px;
+                            display: inline-block;
+                            font-family: "OpenSans-Regular";
+                            font-size: 16px;
+                            color: #FFFFFF;
+                            padding-left: 12px;
+                            position: relative;
+                            &::before{
+                                content: "";
+                                width: 2px;
+                                height: 32.82px;
+                                position: absolute;
+                                margin-left: -18px;
+                                top: 4px; // If you want to set a smaller height and center it, change this value
+                                background-color: #00C4FF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px){
+    #fabricacion{
+        height: 2315px;
+        background: #172E52;
+        padding: 74px 0 120px 0;
+        .holder{
+            .container-fluid{
+                h3{
+                    width: 100%;
+                    height: 136px;
+                    margin: 0 auto 119px auto;
+                    font-size: 25px;;
+                    padding: 0 30px;
+                }
+                .imagenes{
+                    padding: 0 30px;
+                    .part-1{
+                        display: block;
+                        margin: 0 auto;
+                        .papel{
+                            margin: 0px 0px 85px 0px;
+                            .imagen{
+                                width: 100%;
+                                height: 268px;
+                                position: relative;
+                                img{
+                                    position: relative !important;
+                                }
+                                .content{
+                                    width: 100%;
+                                    height: 66px;
+                                    opacity: 1;
+                                    filter: blur(0);
+                                }
+                            }
+                        }
+                        .plastico{
+                            margin: 0px 0px 85px 0px;
+                            .imagen{
+                                width: 100% !important;
+                                height: 268px !important;
+                                position: relative;
+                                img{
+                                    position: relative !important;
+                                }
+                                .content{
+                                    width: 100%;
+                                    height: 66px;
+                                    opacity: 1;
+                                    filter: blur(0);
+                                }
+                            }
+                        }
+                    }
+                    .part-2{
+                        display: block;
+                        justify-content: center;
+                        .tela{
+                            margin: 0px 0px 85px 0px;
+                            .imagen{
+                                width: 100% !important;
+                                height: 268px !important;
+                                position: relative;
+                                img{
+                                    position: relative !important;
+                                }
+                                .content{
+                                    width: 100%;
+                                    height: 66px;
+                                    opacity: 1;
+                                    filter: blur(0);
+                                }
+                            }
+                        }
+                        .carton{
+                            margin: 0px 0px 85px 0px;
+                            .imagen{
+                                width: 100% !important;
+                                height: 268px !important;
+                                position: relative;
+                                img{
+                                    position: relative !important;
+                                }
+                                .content{
+                                    width: 100%;
+                                    height: 66px;
+                                    opacity: 1;
+                                    filter: blur(0);
+                                }
+                            }
+                        }
+                    }
+                }
+                .content{
+                    display: block;
+                    margin-top: 86px;
+                    padding: 0 30px;
+                    .text{
+                        width: 100%;
+                        h4{
+                            width: 100%;
+                            height: 99px;
+                            font-family: "OpenSans-Bold";
+                            font-size: 24px;
+                        }
+                    }
+                    .tamaño{
+                        width: 100%;
+                        margin-top: 67px;
+                        h4{
+                            width: 100%;
+                            height: 27px;
+                            margin-bottom: 21px;
+                        }
+                        span{
+                            width: 100%;
+                        }
+                    }
+                    .espesor{
+                        width: 100%;
+                        margin-top: 80px;
+                        h4{
+                            width: 100%;
+                        }
+                        span{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

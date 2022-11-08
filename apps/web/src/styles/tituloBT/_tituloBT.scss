@@ -1,0 +1,41 @@
+#tituloBT{
+    position: relative;
+    padding: 30.5px 0 139px 0;
+    .holder{
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto;
+        .container-fluid{
+            h2{
+                width: 610px;
+                height: 48px;
+                font-family: "OpenSans-Bold";
+                font-size: 35px;
+                color: #0DB4E6;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+}
+@media (max-width: 767px){
+    #tituloBT{
+        padding: 33px 0 109px 0;
+        .holder{
+            max-width: 1300px;
+            width: 100%;
+            margin: 0 auto;
+            .container-fluid{
+                h2{
+                    width: 355px;
+                    height: 72px;
+                    font-family: "OpenSans-Bold";
+                    font-size: 28px;
+                    color: #0DB4E6;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

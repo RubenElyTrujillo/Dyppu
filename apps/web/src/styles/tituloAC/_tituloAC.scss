@@ -1,0 +1,32 @@
+#tituloAC{
+    position: relative;
+    padding: 140px 0 48.5px 0;
+    .holder{
+        .container-fluid{
+            h2{
+                width: 409px;
+                height: 96px;
+                font-family: "OpenSans-Bold";
+                font-size: 35px;
+                margin: 0 auto;
+                text-align: center;
+                color: #172E52;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    #tituloAC{
+        padding: 94px 0 33px 0;
+        .holder{
+            .container-fluid{
+                h2{
+                    width: 354px;
+                    height: 76px;
+                    font-size: 28px;
+                }
+            }
+        }
+    }    
+}

@@ -1,0 +1,91 @@
+#carousel{
+    background: #172E52;
+    padding: 97px 0 141px 0;
+    .holder{
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto;
+        .container-fluid{
+            .row{
+                display: flex;
+                .text{
+                    width: 30%;
+                    h4{
+                        width: 381px;
+                        height: 144px;
+                        font-family: "OpenSans-Bold";
+                        font-size: 35px;
+                        color: #FFFFFF;
+                        margin-top: 146px;
+                    }
+                }
+                .carousels{
+                    width: 70%;
+                    .carousel{
+                        .tarjeta{
+                            width: 326px !important;
+                            height: 433px;
+                            margin: 0 20px;
+                            .imagen{
+                                width: 100%;
+                                height: 217px;
+                                img{
+                                    position: relative;
+                                    height: 217px !important;
+                                }
+                            }
+                            .content{
+                                height: 216px;
+                                background: #FFFFFF;
+                                padding: 62px 30px;
+                                h5{
+                                    font-family: "OpenSans-Bold";
+                                    font-size: 20px;
+                                    color: #172E52;
+                                }
+                                p{
+                                    font-family: "OpenSans-Regular";
+                                    font-size: 16px;
+                                    color: #172E52;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    #carousel{
+        padding: 0;
+        .holder{
+            padding: 0 30px;
+            .container-fluid{
+                .row{
+                    display: block;
+                    .text{
+                       display: none;
+                    }
+                    .carousels{
+                        width: 100%;
+                        .swiper{
+                            display: block;
+                            .swiper-wrapper{
+                                display: block !important;
+                                transition-duration: 0ms !important;
+                                transform: translate3d(0px,0,0) !important;
+                                .tarjeta{
+                                    width: 326px !important;
+                                    height: 433px;
+                                    margin: 50px auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}

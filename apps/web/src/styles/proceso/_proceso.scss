@@ -1,0 +1,111 @@
+#proceso{
+    .holder{
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto;
+        .container-fluid{
+            .row{
+                display: flex;
+                margin-bottom: 139px;
+                .tecnologia{
+                    width: 50%;
+                    .content{
+                        width: 557px;
+                        height: 299px;
+                        background: #172E52;
+                        padding: 99px 50px 99px 50px;
+                        -webkit-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.21);
+                        -moz-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.21);
+                        box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.21);
+                        h4{
+                            width: 458px;
+                            height: 102px;
+                            font-family: "OpenSans-Regular";
+                            font-size: 25px;
+                            color: #FFFFFF;
+                            span{
+                                font-family: "OpenSans-Bold";
+                            }
+                        }
+                    }
+                }
+                .ventajas{
+                    width: 50%;
+                    .content{
+                        h5{
+                            margin-top: 11px;
+                            height: 27px;
+                            margin-bottom: 35px;
+                            font-family: "OpenSans-Regular";
+                            font-size: 20px;
+                            color: #172E52;
+                        }
+                        ul{
+                            margin-left: 19px;
+                            list-style: none;
+                            li{
+                                font-family: "OpenSans-Bold";
+                                margin: 12.5px 0;
+                                color: #172E52;
+                                font-size: 20px;
+                                &::before {
+                                    content: "+ ";
+                                    color: #00C4FF;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    #proceso{
+        background: #172E52;
+        .holder{
+            padding: 78px 30px 74px 30px;
+            .container-fluid{
+                .row{
+                    display: block;
+                    margin-bottom: 0px;
+                    .tecnologia{
+                        width: 100%;
+                        .content{
+                            width: 100%;
+                            height: 242.5px;
+                            background: transparent;
+                            padding: 28.5px 0;
+                            -webkit-box-shadow: none;
+                            -moz-box-shadow: none;
+                            box-shadow: none;
+                            h4{
+                                width: 100%;
+                                height: 136px;
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                    .ventajas{
+                        width: 100%;
+                        .content{
+                            h5{
+                                margin-top: 28.5px;
+                                height: 27px;
+                                margin-bottom: 35px;
+                                font-family: "OpenSans-Regular";
+                                font-size: 20px;
+                            }
+                            ul{
+                                li{
+                                    color: #FFFFFF;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
