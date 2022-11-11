@@ -1,19 +1,22 @@
 #proceso{
+    padding: 50px 0 139px 0;
     .holder{
         max-width: 1300px;
         width: 100%;
         margin: 0 auto;
         .container-fluid{
+            padding: 0 15px;
             .row{
                 display: flex;
-                margin-bottom: 139px;
+                justify-content: space-evenly;
                 .tecnologia{
-                    width: 50%;
+                    max-width: 44%;
+                    width: 100%;
                     .content{
-                        width: 557px;
-                        height: 299px;
+                        max-width: 557px;
+                        width: 100%;
                         background: #172E52;
-                        padding: 99px 50px 99px 50px;
+                        padding: 17.7% 10% 17.7% 10%;
                         -webkit-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.21);
                         -moz-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.21);
                         box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.21);
@@ -30,11 +33,11 @@
                     }
                 }
                 .ventajas{
-                    width: 50%;
+                    max-width: 44%;
+                    width: 100%;
                     .content{
                         h5{
                             margin-top: 11px;
-                            height: 27px;
                             margin-bottom: 35px;
                             font-family: "OpenSans-Regular";
                             font-size: 20px;
@@ -45,7 +48,7 @@
                             list-style: none;
                             li{
                                 font-family: "OpenSans-Bold";
-                                margin: 12.5px 0;
+                                padding: 12.5px 0;
                                 color: #172E52;
                                 font-size: 20px;
                                 &::before {
@@ -64,17 +67,19 @@
 @media (max-width: 767px){
     #proceso{
         background: #172E52;
+        padding: 78px 0 74px 0;
         .holder{
-            padding: 78px 30px 74px 30px;
+            padding: 0 30px;
             .container-fluid{
+                padding: 0;
                 .row{
                     display: block;
                     margin-bottom: 0px;
                     .tecnologia{
+                        max-width: 100%;
                         width: 100%;
                         .content{
                             width: 100%;
-                            height: 242.5px;
                             background: transparent;
                             padding: 28.5px 0;
                             -webkit-box-shadow: none;
@@ -83,11 +88,12 @@
                             h4{
                                 width: 100%;
                                 height: 136px;
-                                font-size: 25px;
+                                font-size: 23px;
                             }
                         }
                     }
                     .ventajas{
+                        max-width: 100%;
                         width: 100%;
                         .content{
                             h5{
@@ -96,6 +102,7 @@
                                 margin-bottom: 35px;
                                 font-family: "OpenSans-Regular";
                                 font-size: 20px;
+                                color: #FFFFFF;
                             }
                             ul{
                                 li{

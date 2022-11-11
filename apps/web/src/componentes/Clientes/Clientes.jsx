@@ -1,13 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
-import { Logo1, Logo2, Logo3 } from 'ui'
+import { Logo1, Logo2, Logo3, Figura } from 'ui'
 
 export default function Clientes(){
     return(
         <section className='block' id='clientes'>
             <div className='holder'>
                 <div className='container-fluid'>
-                    <h4>Algunos de los clientes que han confiado en nosotros</h4>
+                    <div className='title'>
+                        <h4><Image src={Figura} /> Algunos de los clientes que han confiado en nosotros</h4>
+                    </div>
                     <div className='row'>
                         <div>
                             <Image src={Logo1} />

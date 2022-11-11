@@ -1,23 +1,26 @@
 #obten{
-    margin: 75.75px 0;
+    margin: 50px 0;
     .holder{
         max-width: 1300px;
         width: 100%;
         margin: 0 auto;
         .container-fluid{
-            h3{
-                width: 804px;
-                height: 48px;
-                font-family: "OpenSans-Bold";
-                font-size: 35px;
-                color: #172E52;
+            padding: 0 15px;
+            .title{
+                max-width: 804px;
+                width: 100%;
                 margin: 0 auto;
+                h3{
+                    font-family: "OpenSans-Bold";
+                    font-size: 35px;
+                    color: #172E52;
+                }
             }
             .tarjetas{
                 margin-top: 89px;
                 .placas{
                     display: flex;
-                    justify-content: center;
+                    justify-content: space-evenly;
                     .tarjeta{
                         display: flex;
                         .icono{
@@ -28,11 +31,14 @@
                         }
                         .content{
                             position: relative;
+                            max-width: 380px;
+                            width: 100%;
                             h4{
                                 width: 370px;
                                 height: 86px;
                                 font-family: "OpenSans-Bold";
                                 font-size: 25px;
+                                color: #172E52;
                             }
                             p{
                                 width: 380px;
@@ -50,7 +56,7 @@
                                     height: 32.82px;
                                     position: absolute;
                                     margin-left: -18px;
-                                    top: 10px; // If you want to set a smaller height and center it, change this value
+                                    top: 5px; // If you want to set a smaller height and center it, change this value
         
                                     background-color: #0DB4E6;
                                 }
@@ -67,11 +73,14 @@
         .holder{
             padding: 0 29px;
             .container-fluid{
-                h3{
+                padding: 0;
+                .title{
+                    max-width: 100%;
                     width: 100%;
-                    height: 114px;
-                    font-size: 28px;
                     text-align: center;
+                    h3{
+                        font-size: 28px;
+                    }
                 }
                 .tarjetas{
                     margin-top: 98px;

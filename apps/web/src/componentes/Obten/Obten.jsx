@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
-import { List, Asesoria, Elaboracion, Entrega } from 'ui'
+import { List, Asesoria, Elaboracion, Entrega, Figura } from 'ui'
 
 export default function Obten(){
     const [fadeOut, setFadeOut] = useState(false)
@@ -30,7 +30,9 @@ export default function Obten(){
         <section className='block' id='obten'>
             <div className='holder'>
                 <div className='container-fluid'>
-                    <h3>Obtén tus placas flexográficas de inmediato</h3>
+                    <div className='title'>
+                        <h3><Image src={Figura} /> Obtén tus placas flexográficas de inmediato</h3>
+                    </div>
                     <div className='tarjetas'>
                         <div className='placas'>
                             <div className={`tarjeta wow ${fadeOut ? "animate__animated animate__fadeIn" : ""}`} ref={tarjeta} data-wow-delay="0s" data-wow-offset="200" style={!fadeOut ? ({"visibility": "hidden", "animationDelay": "0s", "animationName": "none"}) : ({"visibility": "visible", "animationDelay": "0s", "animationName": "fadeIn"})}>

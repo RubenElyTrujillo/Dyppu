@@ -2,14 +2,18 @@
     position: relative;
     padding: 140px 0 48.5px 0;
     .holder{
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto;
         .container-fluid{
+            max-width: 439px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 15px;
+            text-align: center;
             h2{
-                width: 409px;
-                height: 96px;
                 font-family: "OpenSans-Bold";
                 font-size: 35px;
-                margin: 0 auto;
-                text-align: center;
                 color: #172E52;
             }
         }
@@ -18,12 +22,12 @@
 
 @media (max-width: 767px){
     #tituloAC{
-        padding: 94px 0 33px 0;
+        padding: 94px 0 31px 0;
         .holder{
+            padding: 0 30px;
             .container-fluid{
+                padding: 0;
                 h2{
-                    width: 354px;
-                    height: 76px;
                     font-size: 28px;
                 }
             }

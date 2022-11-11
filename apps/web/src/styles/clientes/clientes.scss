@@ -5,14 +5,17 @@
         width: 100%;
         margin: 0 auto;
         .container-fluid{
-            h4{
-                width: 602px;
-                height: 82px;
+            padding: 0 15px;
+            .title{
+                max-width: 602px;
+                width: 100%;
                 margin: 0 auto;
                 text-align: center;
-                font-family: "OpenSans-Bold";
-                font-size: 30px;
-                color: #172E52;
+                h4{
+                    font-family: "OpenSans-Bold";
+                    font-size: 30px;
+                    color: #172E52;
+                }
             }
             .row{
                 margin-top: 106px;
@@ -28,9 +31,12 @@
         .holder{
             padding: 0 30px;
             .container-fluid{
-                h4{
-                    width: 100%;
-                    height: 123px;
+                padding: 0;
+                .title{
+                    max-width: 100%;
+                    h4{
+                        width: 100%;
+                    }
                 }
                 .row{
                     margin-top: 106px;

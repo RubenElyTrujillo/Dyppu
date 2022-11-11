@@ -19,9 +19,6 @@ export default function Cover(){
             </div>
             <div className='holder'>
                 <div className='container-fluid'>
-                    <div className='logo'>
-                        <Image src={LogoDyppu} alt='' quality={100} />
-                    </div>
                     <h1>Placas grabadas de fotopolímero para impresión flexográfica</h1>
                     <Link href="/#contacto" legacyBehavior>
                         Cotiza ahora

@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { Formik, Form, Field } from 'formik'
 import * as Yup from 'yup'
-import { Img9, Reloj, Mapa } from 'ui'
+import { Img9, Reloj, Mapa, Figura3 } from 'ui'
 
 export default function Contacto(){
     let schema = Yup.object().shape({
@@ -17,7 +17,9 @@ export default function Contacto(){
         <section className='block' id='contacto'>
             <div className='holder'>
                 <div className='container-fluid'>
-                    <h4>Escríbenos para cotizar tus placas flexográficas</h4>
+                    <div className='title'>
+                        <h4>Escríbenos para cotizar tus placas flexográficas</h4>
+                    </div>
                     <div className='row'>
                         <div className='form'>
                             <Formik
@@ -38,31 +40,31 @@ export default function Contacto(){
                                 {props =>(
                                     <Form>
                                         <div className='row-form'>
-                                            <div className='form-control'>
+                                            <div className='form-control-custom'>
                                                 <label htmlFor="nombre">Nombre</label>
                                                 <Field className={`${props.errors.nombre && props.touched.nombre ? ("isError") : null}`} type="text" name='nombre' />
                                             </div>
-                                            <div className='form-control'>
+                                            <div className='form-control-custom'>
                                                 <label htmlFor="nombre">Nombre de la empresa</label>
                                                 <Field className={`${props.errors.empresa && props.touched.empresa ? ("isError") : null}`} type="text" name='empresa' />
                                             </div>
                                         </div>
                                         <div className='row-form'>
-                                            <div className='form-control'>
+                                            <div className='form-control-custom'>
                                                 <label htmlFor="nombre">Ubicación</label>
                                                 <Field className={`${props.errors.ubicacion && props.touched.ubicacion ? ("isError") : null}`} type="text" name='ubicacion' />
                                             </div>
-                                            <div className='form-control'>
+                                            <div className='form-control-custom'>
                                                 <label htmlFor="nombre">Teléfono</label>
                                                 <Field className={`${props.errors.telefono && props.touched.telefono ? ("isError") : null}`} type="text" name='telefono' />
                                             </div>
                                         </div>
                                         <div className='row-form'>
-                                            <div className='form-control'>
+                                            <div className='form-control-custom'>
                                                 <label htmlFor="nombre">Correo electrónico</label>
                                                 <Field className={`${props.errors.email && props.touched.email ? ("isError") : null}`} type="email" name='email' />
                                             </div>
-                                            <div className='form-control'>
+                                            <div className='form-control-custom'>
                                                 <label htmlFor="nombre">Placa para impresión en:</label>
                                                 <Field className={`${props.errors.placa && props.touched.placa ? ("isError") : null}`} name="placa" as="select">
                                                     <option defaultValue></option>
@@ -75,7 +77,7 @@ export default function Contacto(){
                                             </div>
                                         </div>
                                         <div className='row-form'>
-                                            <div className='form-control'>
+                                            <div className='form-control-custom'>
                                                 <label htmlFor="comentarios">Comentarios</label>
                                                 <Field as="textarea" name="comentarios" rows="10"></Field>
                                             </div>
@@ -109,7 +111,8 @@ export default function Contacto(){
                             </div>
                         </div>
                         <div className="imagen">
-                            <Image src={Img9} />
+                            <Image src={Img9} className="complemento" />
+                            <Image src={Figura3} className="figura3" />
                         </div>
                     </div>
                     <div className='end'>

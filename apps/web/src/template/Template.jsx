@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 import Footer from '../componentes/Footer/Footer'
+import Navbar from '../componentes/Navbar/Navbar'
 
 export default function Template({ children }){
     return(
@@ -15,8 +17,17 @@ export default function Template({ children }){
                     <li className="phone"><a href="tel:+52(222)4244646" target="_blank" rel="noreferrer" className="icon-number"></a></li>
                 </ul>
             </div>
-            {children}
-            <Footer />
+            <div className='outer-wrapper'>
+                <Navbar />
+                {children}
+                <Footer />
+            </div>
+            <div className='button-sticky'>
+                <Link href="/#contacto" legacyBehavior >
+                    Cotiza ahora
+                </Link>
+            </div>
+            
         </>
     )
 }

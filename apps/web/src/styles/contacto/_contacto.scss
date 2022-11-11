@@ -9,21 +9,26 @@
         width: 100%;
         margin: 0 auto;
         .container-fluid{
-            h4{
-                width: 486px;
-                height: 94px;
-                font-family: "OpenSans-Bold";
-                font-size: 35px;
-                color: #FFFFFF;
-                margin-bottom: 42px;
+            padding: 0 15px;
+            .title{
+                max-width: 486px;
+                width: 100%;
+                h4{
+                    font-family: "OpenSans-Bold";
+                    font-size: 35px;
+                    color: #FFFFFF;
+                    margin-bottom: 42px;
+                    letter-spacing: 1px;
+                }
             }
             .row{
                 display: flex;
                 .form{
-                    width: 58%;
+                    max-width: 59%;
+                    width: 100%;
                     .row-form{
                         display: flex;
-                        .form-control{
+                        .form-control-custom{
                             &:first-child{
                                 margin-left: 0px;
                             }
@@ -183,12 +188,21 @@
                     }
                 }
                 .imagen{
+                    max-width: 41%;
                     text-align: end;
-                    width: 42%;
+                    width: 100%;
                     margin-left: 55.5px;
-                    img{
-                        width: 541px !important;
-                        height: 675px !important;
+                    .complemento{
+                        position: relative;
+                        z-index: 2;
+                    }
+                    .figura3{
+                        width: 119px !important;
+                        height: 117px !important;
+                        position: absolute;
+                        right: 20%;
+                        margin-top: 44%;
+                        z-index: 1;
                     }
                 }
             }
@@ -208,10 +222,31 @@
         }
     }
 }
+@media (min-width: 1900px){
+    #contacto{
+        .holder{
+            .container-fluid{
+                .row{
+                    .imagen{
+                        .figura3{
+                            width: 119px !important;
+                            height: 117px !important;
+                            position: absolute;
+                            right: 30%;
+                            margin-top: 33%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media (max-width: 767px){
     #contacto{
         height: 1506px;
         padding: 119px 0 88px 0;
+        background-image: none;
+        background-image: radial-gradient(#2B5876, #080B67) ;
         .holder{
             padding: 0 30px;
             .container-fluid{
@@ -227,7 +262,7 @@
                         width: 100%;
                         .row-form{
                             display: block;
-                            .form-control{
+                            .form-control-custom{
                                 &:first-child{
                                     margin-left: 0px;
                                 }

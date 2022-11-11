@@ -1,40 +1,45 @@
 #tarjetas{
     position: relative;
+    padding: 48.5px 0 30.5px 0;
     .holder{
         max-width: 1300px;
         width: 100%;
-        margin: 48.5px auto 30.5px auto;
+        margin: 0 auto;
         .container-fluid{
-            h2{
-                width: 512px;
-                height: 68px;
-                font-family: "OpenSans-Bold";
-                font-size: 25px;
-                color: #172E52;
+            .title{
+                max-width: 542px;
+                width: 100%;
+                padding: 0 15px;
+                margin: 0 auto;
                 text-align: center;
-                margin: 0 auto 26px auto;
+                h2{
+                    font-family: "OpenSans-Bold";
+                    font-size: 25px;
+                    color: #172E52;
+                }
             }
             .tarjetas{
                 display: flex;
+                margin-top: 52px;
+                justify-content: space-between;
+                padding: 0 15px;
                 .tarjeta{
-                    max-width: 33.33%;
-                    width: 376px;
-                    margin: 0 auto;
+                    max-width: 30%;
+                    width: 100%;
                     .imagen{
+                        width: 100%;
                         position: relative;
-                        height: 228px;
-                        box-shadow: 10px 10px 19px -1px rgba(0,0,0,0.75);
-                        -webkit-box-shadow: 10px 10px 19px -1px rgba(0,0,0,0.75);
-                        -moz-box-shadow: 10px 10px 19px -1px rgba(0,0,0,0.75);
+                        -webkit-box-shadow: 0px 10px 20px -10px rgba(23,46,82,1);
+                        -moz-box-shadow: 0px 10px 20px -10px rgba(23,46,82,1);
+                        box-shadow: 0px 10px 20px -10px rgba(23, 46, 82, 1);
                         img{
                             position: relative !important;
+                            display: block;
                         }
                     }
-                    .title{
+                    .title-card{
                         margin-top: 34px;
                         h3{
-                            width: 274px;
-                            height: 54px;
                             font-family: "OpenSans-Bold";
                             font-size: 20px;
                             color: #0DB4E6;
@@ -43,20 +48,21 @@
                     .description{
                         margin-top: 38px;
                         padding-left: 18px;
+                        position: relative;
                         &::before{
                             content: "";
                             width: 2px;
                             height: 32.82px;
                             position: absolute;
                             margin-left: -18px;
-                            bottom: 77px; // If you want to set a smaller height and center it, change this value
-
+                            top: 0; // If you want to set a smaller height and center it, change this value
                             background-color: #0DB4E6;
                         }
                         p{
                             font-family: "OpenSans-Regular";
                             font-size: 16px;
                             color: #172E52;
+                            letter-spacing: -0.3px;
                             span{
                                 font-family: "OpenSans-Bold"; 
                             }
@@ -70,26 +76,38 @@
 
 @media (max-width: 767px){
     #tarjetas{
+        padding: 31px 0 30.5px 0;
         .holder{
-            margin: 33px auto 30.5px auto;
+            padding: 0 30px;
             .container-fluid{
-                h2{
-                    width: 100%;
-                    height: 60px;
-                    font-size: 22px;
-                    margin: 0 auto 112px auto;
-                    padding: 0 30px;
+                .title{
+                    padding: 0;
+                    h2{
+                        font-size: 22px;
+                    }
                 }
                 .tarjetas{
                     display: block;
-                    padding: 0 30px;
+                    padding: 0;
+                    margin-top: 116px;
                     .tarjeta{
                         max-width: 100%;
                         width: 100%;
+                        .title{
+                            h3{
+                                margin-top: 0;
+                                width: 100%;
+                                height: auto;
+                                margin-bottom: 0;
+                            }
+                        }
                         .description{
-                            margin-top: 38px;
+                            margin-top: 30px;
                             padding-left: 0px;
-                            margin-bottom: 38px;
+                            margin-bottom: 30px;
+                            p{
+                                margin-bottom: 0;
+                            }
                             &::before{
                                 display: none;
                             }

@@ -26,6 +26,11 @@ import Img9 from './imagenes/Desktop/Img-9.jpg'
 import Reloj from './iconos/reloj.svg'
 import Mapa from './iconos/mapa.svg'
 import LogoGoplek from './iconos/goplek-footer.svg'
+import Figura from './iconos/figura.svg'
+import Figura2 from './iconos/figura-2.svg'
+import Figura3 from './iconos/figura-3.svg'
+import Img5M from './imagenes/Mobile/Img-5.jpg'
+import Img8M from './imagenes/Mobile/Img-8.jpg'
 
 export {
     LogoDyppu,
@@ -55,5 +60,10 @@ export {
     Img9,
     Reloj,
     Mapa,
-    LogoGoplek
+    LogoGoplek,
+    Figura,
+    Figura2,
+    Figura3,
+    Img5M,
+    Img8M
 }

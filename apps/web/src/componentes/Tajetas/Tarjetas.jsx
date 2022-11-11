@@ -15,7 +15,7 @@ export default function Tarjetas(){
                 setFadeOut(false)
             }
         }else{
-            if(fade.getBoundingClientRect().top <= 484){
+            if(fade.getBoundingClientRect().top <= 384){
                 setFadeOut(true)
             } else{
                 setFadeOut(false)
@@ -30,13 +30,15 @@ export default function Tarjetas(){
         <section className='block' id='tarjetas'>
             <div className='holder'>
                 <div className='container-fluid'>
-                    <h2>35 años de experiencia en preprensa y en grabados.</h2>
+                    <div className='title'>
+                        <h2>35 años de experiencia en preprensa y en grabados.</h2>
+                    </div>
                     <div className='tarjetas'>
                         <div className={`wow ${fadeOut ? "animate__animated animate__fadeIn" : ""} tarjeta`} ref={tarjeta} data-wow-delay="0s" data-wow-offset="200" style={!fadeOut ? ({"visibility": "hidden", "animationDelay": "0s", "animationName": "none"}) : ({"visibility": "visible", "animationDelay": "0s", "animationName": "fadeIn"})}>
                             <div className='imagen'>
                                 <Image src={Img2} fill quality={100} alt='' />
                             </div>
-                            <div className='title'>
+                            <div className='title-card'>
                                 <h3>PLACAS FLEXOGRÁFICAS DIGITALES Y ANALÓGICAS</h3>
                             </div>
                             <div className='description'>
@@ -47,7 +49,7 @@ export default function Tarjetas(){
                             <div className='imagen'>
                                 <Image src={Img3} fill quality={100} alt='' />
                             </div>
-                            <div className='title'>
+                            <div className='title-card'>
                                 <h3>SERVICIO DE PREPRENSA</h3>
                             </div>
                             <div className='description'>
@@ -58,7 +60,7 @@ export default function Tarjetas(){
                             <div className='imagen'>
                                 <Image src={Img4} fill quality={100} alt='' />
                             </div>
-                            <div className='title'>
+                            <div className='title-card'>
                                 <h3>EXPERIENCIA</h3>
                             </div>
                             <div className='description'>

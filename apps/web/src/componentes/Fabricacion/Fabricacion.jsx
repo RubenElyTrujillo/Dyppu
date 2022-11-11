@@ -1,18 +1,21 @@
 import React from 'react'
 import Image from 'next/image'
-import { Img5, Img6, Img7, Img8, Artboard, StackLine } from 'ui'
+import { Img5, Img6, Img7, Img8, Artboard, StackLine, Figura, Img5M, Img8M } from 'ui'
 
 export default function Fabricacion(){
     return(
         <section className='block' id='fabricacion'>
             <div className='holder'>
                 <div className='container-fluid'>
-                    <h3><span>Fabricamos placas flexográficas digitales y analógicas</span> para la impresión en distintos materiales:</h3>
+                    <div className="title">
+                        <h3><Image src={Figura} /><span> Fabricamos placas flexográficas digitales y analógicas</span> para la impresión en distintos materiales:</h3>
+                    </div>
                     <div className='imagenes'>
                         <div className='part-1'>
                             <div className='papel'>
                                 <div className='imagen'>
-                                    <Image src={Img5} fill quality={100} />
+                                    <Image src={Img5M} fill quality={100} className="movil" />
+                                    <Image src={Img5} fill quality={100} className="desk" />
                                     <div className='content'>
                                         <h4>PAPEL</h4>
                                         <p>Placas flexográficas para impresión en papel</p>
@@ -41,7 +44,8 @@ export default function Fabricacion(){
                             </div>
                             <div className='carton'>
                                 <div className='imagen'>
-                                    <Image src={Img8} fill quality={100} />
+                                    <Image src={Img8} fill quality={100} className="desk" />
+                                    <Image src={Img8M} fill quality={100} className="movil" />
                                     <div className='content'>
                                         <h4>CARTÓN</h4>
                                         <p>Placas flexográficas para impresión en cartón</p>
@@ -50,7 +54,7 @@ export default function Fabricacion(){
                             </div>
                         </div>
                     </div>
-                    <div className='content'>
+                    <div className='others'>
                         <div className='text'>
                             <h4>Manejamos medidas que se adaptan a diferentes necesidades</h4>
                         </div>
@@ -65,7 +69,7 @@ export default function Fabricacion(){
                         </div>
                         <div className='espesor'>
                             <div className='icon'>
-                                <Image src={Artboard} />
+                                <Image src={StackLine} />
                             </div>
                             <div className='text'>
                                 <h4>Espesor:</h4>
